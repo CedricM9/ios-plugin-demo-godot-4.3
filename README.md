@@ -54,11 +54,13 @@ https://docs.godotengine.org/en/stable/tutorials/platform/ios/ios_plugin.html
 
 An issue I encountered was that when trying to build using scons in the following steps, i got the error: `MoltenVK SDK installation directory not found, use 'vulkan_sdk_path' SCons parameter to specify SDK path.` which apparently happens since a [newer version moves the required sdk](https://github.com/godotengine/godot/pull/87305). The error is pretty straightforward but I thought it important to include nevertheless.
 
-1. Download the MoltenVK release [1.2.6](https://github.com/KhronosGroup/MoltenVK/releases/tag/v1.2.6) from github. Downloading the file `MoltenVK-macos.tar` is enough.
+1. Download the MoltenVK [release 1.2.6](https://github.com/KhronosGroup/MoltenVK/releases/tag/v1.2.6) from github. Downloading the file `MoltenVK-macos.tar` is enough.
 2. Navigate to the downloads and extract the tar.
 3. Make a note of the path of the extracted folder. The path of the folder is what we will be using for the compilation process in the next steps (There is another folder `MoltenVK` inside of the top level folder. Don't use this path but rather the most top-level folder called `MoltenVK`)
 
 - - - -
+
+### Normal Steps ###
 
 1. Clone the plugin repository and submodules. This grabs the source code of Godot Engine as well. If you don't need to do that again then clone without `--recursive` around your godot folder or symlink/alias it in.
 
